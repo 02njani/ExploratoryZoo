@@ -358,6 +358,7 @@ document.querySelector("#explore").addEventListener("click", () => {
   document.querySelector("#caterpillar").style.display = "block";
   document.querySelector("#duck").style.display = "block";
   document.querySelector(".container").style.height = "fit-content";
+  pageTurn.play();
 });
   
 let click = false;
