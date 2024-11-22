@@ -129,8 +129,7 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "vercel --prod"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
