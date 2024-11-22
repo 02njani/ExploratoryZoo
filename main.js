@@ -611,7 +611,7 @@ loader.load('./models/SM_Env_GroundMounds_01.fbx', loadBackground);
 
 loader.load('./models/SM_Env_GroundMounds_01.fbx', loadBackgroundBack);
 
-loader.load('/models/SM_Env_Flower_01.fbx', loadFlower5);
+loader.load('./models/SM_Env_Flower_01.fbx', loadFlower5);
 
 //camera setup ____________________________________________________________________________________________________________
 camera.position.z = 50;
