@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import * as ADDONS from 'three/addons/';
+import * as ADDONS from 'three/addons';
 import {scene, loadBird, loadTree, loadLog, loadGround, loadGroundBack, loadRock, loadRock2, loadGrass, loadFlower, loadFlower2} from './scene1.js';
 import {scene2, loadSheep, loadGround2, loadGround2Back, loadDirt, loadCart, loadGrass2, loadPebble} from './scene2.js';
 import {scene3, loadHare, loadSnow, loadSnowBack, loadSnowPile, loadSnowPile2, loadTree2, loadTree3, loadRock3, loadSnowyTree} from './scene3.js';
