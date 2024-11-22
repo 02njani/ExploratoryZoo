@@ -444,7 +444,7 @@ document.querySelector(".backArrow").addEventListener("click", () => {
 
 //loaders_________________________________________________________________________________________________________________
 const manager = new THREE.LoadingManager();
-const loader = new FBXLoader(manager);
+const loader = new ADDONS.FBXLoader(manager);
 let loaded = false;
 
 manager.onLoad = function () {
