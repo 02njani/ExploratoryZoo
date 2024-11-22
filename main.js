@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import * as ADDONS from 'three/addons/';
+import {FBXLoader} from 'https://unpkg.com/three@0.125.2/examples/jsm/loaders/FBXLoader.js';
 import {scene, loadBird, loadTree, loadLog, loadGround, loadGroundBack, loadRock, loadRock2, loadGrass, loadFlower, loadFlower2} from './scene1.js';
 import {scene2, loadSheep, loadGround2, loadGround2Back, loadDirt, loadCart, loadGrass2, loadPebble} from './scene2.js';
 import {scene3, loadHare, loadSnow, loadSnowBack, loadSnowPile, loadSnowPile2, loadTree2, loadTree3, loadRock3, loadSnowyTree} from './scene3.js';
@@ -444,7 +444,7 @@ document.querySelector(".backArrow").addEventListener("click", () => {
 
 //loaders_________________________________________________________________________________________________________________
 const manager = new THREE.LoadingManager();
-const loader = new ADDONS.FBXLoader(manager);
+const loader = new FBXLoader(manager);
 let loaded = false;
 
 manager.onLoad = function () {
