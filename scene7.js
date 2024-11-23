@@ -28,7 +28,7 @@ export function loadHill(object) {
           if (child.isMesh) {
             const material = child.material;
             if (material && material.map) {
-              const texture = textureLoader.load('./models/PolyAdventureTexture_02.png');
+              const texture = textureLoader.load('./models/PolyAdventureTexture_01.png');
               material.map = texture;
             }
           }
@@ -44,7 +44,7 @@ export function loadHillBack(object) {
         if (child.isMesh) {
           const material = child.material;
           if (material && material.map) {
-            const texture = textureLoader.load('./models/PolyAdventureTexture_02.png');
+            const texture = textureLoader.load('./models/PolyAdventureTexture_01.png');
             material.map = texture;
           }
         }
@@ -60,7 +60,7 @@ export function loadTreeStump(object) {
           if (child.isMesh) {
             const material = child.material;
             if (material && material.map) {
-              const texture = textureLoader.load('./models/PolyAdventureTexture_02.png');
+              const texture = textureLoader.load('./models/PolyAdventureTexture_01.png');
               material.map = texture;
             }
           }
