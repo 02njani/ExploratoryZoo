@@ -18,10 +18,15 @@ import {scene15, loadCaterpillarSolo} from './scene15.js';
 import {scene16, loadBeeSolo} from './scene16.js';
 
 async function loadData() {
-  const response = await fetch("./animals.json");
-  const data = await response.json();
-  addNames(data);
-  getInfo(data);
+  try {
+    const response = await fetch("./animals.json");
+    const data = await response.json();
+    addNames(data);
+    getInfo(data);
+  } catch (error) {
+    console.log(error);
+  }
+  
 }
 
 //audio____________________________________________________________________________________________________________________
