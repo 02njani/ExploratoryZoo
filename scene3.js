@@ -125,7 +125,7 @@ export function loadRock3(object) {
         if (child.isMesh) {
           const material = child.material;
           if (material && material.map) {
-            const texture = textureLoader.load('./models/PolyAdventureTexture_Dark_01.png');
+            const texture = textureLoader.load('./models/PolyAdventureTexture_01.png');
             material.map = texture;
           }
         }
@@ -141,7 +141,7 @@ export function loadSnowyTree(object) {
         if (child.isMesh) {
           const material = child.material;
           if (material && material.map) {
-            const texture = textureLoader.load('./models/PolyAdventureTexture_Dark_01.png');
+            const texture = textureLoader.load('./models/PolyAdventureTexture_01.png');
             material.map = texture;
           }
         }
