@@ -108,7 +108,7 @@ export function loadApple(object) {
           if (child.isMesh) {
             const material = child.material;
             if (material && material.map) {
-              const texture = textureLoader.load('./models/PolygonPrototype_Texture_01.png');
+              const texture = textureLoader.load('./models/PolyAdventureTexture_01.png');
               material.map = texture;
             }
           }
