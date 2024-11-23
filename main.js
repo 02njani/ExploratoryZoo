@@ -44,7 +44,7 @@ duck.volume = 0.2;
 let splash = new Audio("./sounds/splash.mp3");
 splash.volume = 0.1;
 let bee = new Audio("./sounds/bee.wav");
-bee.volume = 0.2;
+bee.volume = 0.4;
 let munch = new Audio("./sounds/munch.wav");
 munch.volume = 0.2;
 
