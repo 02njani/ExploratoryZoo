@@ -53,7 +53,7 @@ bee.volume = 0.5;
 let munch = new Audio("./sounds/munch.wav");
 munch.volume = 0.2;
 let background = new Audio("./sounds/background.mp3");
-background.volume = 0.5;
+background.volume = 0.1;
 background.loop = true;
 
 //setup______________________________________________________________________________________________________________________
