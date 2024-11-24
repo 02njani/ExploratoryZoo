@@ -29,6 +29,10 @@ async function loadData() {
   
 }
 
+document.addEventListener("error", (e) => {
+  console.log(e);
+});
+
 //audio____________________________________________________________________________________________________________________
 let pageTurn = new Audio("./sounds/pageturn.mp3");
 pageTurn.volume = 0.1;
