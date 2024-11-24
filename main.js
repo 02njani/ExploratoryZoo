@@ -53,11 +53,11 @@ duck.volume = 0.2;
 let splash = new Audio("./sounds/splash.mp3");
 splash.volume = 0.1;
 let bee = new Audio("./sounds/bee.wav");
-bee.volume = 0.5;
+bee.volume = 0.6;
 let munch = new Audio("./sounds/munch.wav");
 munch.volume = 0.2;
 let background = new Audio("./sounds/background.mp3");
-background.volume = 0.1;
+background.volume = 0.08;
 background.loop = true;
 
 //setup______________________________________________________________________________________________________________________
