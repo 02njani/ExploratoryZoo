@@ -29,10 +29,6 @@ async function loadData() {
   
 }
 
-document.addEventListener("error", (e) => {
-  console.log(e);
-});
-
 //audio____________________________________________________________________________________________________________________
 let pageTurn = new Audio("./sounds/pageturn.mp3");
 pageTurn.volume = 0.1;
@@ -458,13 +454,14 @@ document.querySelector(".backArrow").addEventListener("click", () => {
 //loaders_________________________________________________________________________________________________________________
 const manager = new THREE.LoadingManager();
 const loader = new FBXLoader(manager);
-let loaded = false;
 
 manager.onLoad = function () {
-	loaded = true;
   document.querySelector("#explore").innerHTML = "Explore!";
   document.querySelector("#explore").disabled = false;
 };
+
+
+try {
 
 //bird
 loader.load('./models/Bird_01.fbx', loadBird);
@@ -625,6 +622,10 @@ loader.load('./models/SM_Env_GroundMounds_01.fbx', loadBackground);
 loader.load('./models/SM_Env_GroundMounds_01.fbx', loadBackgroundBack);
 
 loader.load('./models/SM_Env_Flower_01.fbx', loadFlower5);
+
+} catch (e) {
+  console.log(e);
+}
 
 //camera setup ____________________________________________________________________________________________________________
 camera.position.z = 50;
