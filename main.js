@@ -49,9 +49,12 @@ duck.volume = 0.2;
 let splash = new Audio("./sounds/splash.mp3");
 splash.volume = 0.1;
 let bee = new Audio("./sounds/bee.wav");
-bee.volume = 0.4;
+bee.volume = 0.5;
 let munch = new Audio("./sounds/munch.wav");
 munch.volume = 0.2;
+let background = new Audio("./sounds/background.mp3");
+background.volume = 0.5;
+background.loop = true;
 
 //setup______________________________________________________________________________________________________________________
 const camera = new THREE.PerspectiveCamera( 75, 1, 0.1, 1000 );
@@ -364,6 +367,7 @@ document.querySelector("#explore").addEventListener("click", () => {
   document.querySelector("#duck").style.display = "block";
   document.querySelector(".container").style.height = "fit-content";
   pageTurn.play();
+  background.play();
 });
   
 let click = false;
