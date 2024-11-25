@@ -461,8 +461,6 @@ manager.onLoad = function () {
 };
 
 
-try {
-
 //bird
 loader.load('./models/Bird_01.fbx', loadBird);
 
@@ -623,9 +621,6 @@ loader.load('./models/SM_Env_GroundMounds_01.fbx', loadBackgroundBack);
 
 loader.load('./models/SM_Env_Flower_01.fbx', loadFlower5);
 
-} catch (e) {
-  console.log(e);
-}
 
 //camera setup ____________________________________________________________________________________________________________
 camera.position.z = 50;
