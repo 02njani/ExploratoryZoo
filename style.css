@@ -93,6 +93,14 @@
     font-family: "Permanent Marker", cursive;
 }
 
+#mobileText {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    display:none;
+}
+
 /* _____________________________________________________________________________________________________________ */
 
 .card {
@@ -253,5 +261,9 @@
     }
     .card, .notebook {
         width:fit-content;
+    }
+
+    #mobileText {
+        display:block;
     }
 }
